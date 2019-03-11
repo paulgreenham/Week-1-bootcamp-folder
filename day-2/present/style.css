@@ -1,0 +1,25 @@
+/* Present */
+
+#parent {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.ribbon {
+    background-color: red;
+    position: absolute;
+}
+
+#first {
+    width: 10px;
+    height: 200px;
+    left: 10%;
+}
+
+#second {
+    width: 200px;
+    height: 10px;
+    top: 15%;
+}

@@ -1,0 +1,48 @@
+/* Lesson exersizes */
+
+#parent {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: 100px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}
+
+#first {
+    background-color: blue;
+    position: absolute;
+    left: 0;
+}
+
+#second {
+    background-color: green;
+    position: absolute;
+    right: 0;
+}
+
+#third {
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+}
+
+#fourth {
+    background-color: purple;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#fifth {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px;
+}

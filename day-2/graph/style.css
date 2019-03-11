@@ -1,0 +1,63 @@
+/* Graph */
+
+#main {
+    background-color: #6C5CE7;
+    border-radius: 3%;
+    width: 400px;
+    height: 200px;
+    position: relative;
+    padding: 5px;
+}
+
+.label {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+}
+
+#money {
+    left: 4%;
+}
+
+#time {
+    bottom: 0;
+    right: 5%
+}
+
+.bar {
+    background-color: #B2BEC3;
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
+#bar1 {
+    height: 30px;
+}
+
+#bar2 {
+    height: 120px;
+    left: 14%
+}
+
+#bar3 {
+    height: 180px;
+    left: 28%
+}
+
+#bar4 {
+    height: 160px;
+    left: 42%;
+}
+
+#bar5 {
+    height: 145px;
+    left: 56%;
+}
+
+#bar6 {
+    height: 80px;
+    left: 70%;
+}
