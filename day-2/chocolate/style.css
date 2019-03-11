@@ -1,0 +1,33 @@
+.parent {
+    background-color: black;
+    display: inline-block;
+    position: relative;
+}
+
+.box {
+    background-color: #66320E;
+    height: 100px;
+    width: 100px;
+    margin: 3px;
+    float: left;
+    display: inline-block;
+}
+
+#firstlower {
+    clear: left;
+}
+
+#bitten {
+    background-color: black
+}
+
+#strip {
+    background-color: darkred;
+    position: relative;
+    height: 3px;
+    width: 98.5%;
+    margin-left: 3px;
+    float: left;
+    clear: left;
+    display: inline-block;
+}
