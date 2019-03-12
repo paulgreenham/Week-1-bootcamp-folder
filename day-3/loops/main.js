@@ -108,29 +108,48 @@
 
 //10.
 
-const posts = [
-    {
-      id: 1, 
-      text: "Love this product",
-      comments: []},
-    { 
-      id: 2, 
-      text: "This is the worst. DON'T BUY!", 
-      comments: [{id: 1, text: "Idiot has no idea"}, {id: 2, text: "Fool!"}, {id: 3, text: "I agree!"}]
-    },
-    {
-      id: 3, 
-      text: "So glad I found this. Bought four already!",
-      comments: []}
-]
-for(let index in posts){
-    if(posts[index].id == 2){
-        for(let postIndex in posts[index].comments){
-            if(posts[index].comments[postIndex].id ==3){
-                posts[index].comments.splice(postIndex, 1)
-            }
-        }
-    }
-}
+// const posts = [
+//     {
+//       id: 1, 
+//       text: "Love this product",
+//       comments: []},
+//     { 
+//       id: 2, 
+//       text: "This is the worst. DON'T BUY!", 
+//       comments: [{id: 1, text: "Idiot has no idea"}, {id: 2, text: "Fool!"}, {id: 3, text: "I agree!"}]
+//     },
+//     {
+//       id: 3, 
+//       text: "So glad I found this. Bought four already!",
+//       comments: []}
+// ]
 
-console.log(posts)
+// for(let index in posts){
+//     if(posts[index].id == 2){
+//         for(let postIndex in posts[index].comments){
+//             if(posts[index].comments[postIndex].id ==3){
+//                 posts[index].comments.splice(postIndex, 1)
+//             }
+//         }
+//     }
+// }
+
+// console.log(posts)
+
+
+//Extension
+
+// const dictionary = {
+//     "A": ["Aardvark", "Abacus", "Actually", "Atomic"],
+//     "B": ["Banana", "Bonkers", "Brain", "Bump"],
+//     "C": ["Callous", "Chain", "Coil", "Czech"]
+// }
+
+// const index = Object.keys(dictionary)
+
+// for(let letter of index){
+//     console.log("Words that begin with " + letter + ":")
+//     for(let item of dictionary[letter]){
+//         console.log(item)
+//     }
+// }
