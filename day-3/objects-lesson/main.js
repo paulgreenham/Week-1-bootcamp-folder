@@ -65,27 +65,67 @@
 
 //1.
 
-const person1 = {
-    name: "Jill",
-    age: 26,
-    city: "Raleigh"
+// const person1 = {
+//     name: "Jill",
+//     age: 26,
+//     city: "Raleigh"
+// }
+
+// const person2 = {
+//     name: "Robert",
+//     age: 28,
+//     city: "Toronto"
+// }
+
+// if(person1.age == person2.age){
+//     if(person1.city == person2.city){
+//         console.log(person1.name + " wanted to date " + person2.name)
+//     }
+//     else{
+//         console.log(person1.name + " wanted to date " + person2.name + ", but couldn't")
+//     }
+// }
+// else{
+//     console.log(person1.name + " didn't want to date " + person2.name)
+// }
+
+
+//2.
+
+let myList = [
+    {type: "backpack", color: "grey", size: "medium", status: "worn"},
+    {type: "lunchbox", color: "clear", size: "small", status: "new"}
+]
+
+myList[0].color = "green"
+myList.splice(1,1)
+
+// // console.log(myList)
+
+
+// //3.
+
+let secondList = [
+    {type: "computer", color: "silver", size: "medium", status: "used"},
+    {type: "jeans", color: "blue", size: "large", status: "worn"}
+]
+
+myList.push(...secondList)
+
+// console.log(myList)
+
+
+//4.
+
+let library = {
+    books: [
+        {title: "Atlas Shrugged", author: "Ayn Rand"},
+        {title: "The Lord of the Rings", author: "JRR Tolkien"},
+        {title: "To Kill a Mockingbird", author: "Harper Lee"},
+        {title: "A Picture of Dorian Gray", author: "Oscar Wilde"}
+    ]
 }
 
-const person2 = {
-    name: "Robert",
-    age: 28,
-    city: "Toronto"
-}
+myList.push(library)
 
-if(person1.age == person2.age){
-    if(person1.city == person2.city){
-        console.log(person1.name + " wanted to date " + person2.name)
-    }
-    else{
-        console.log(person1.name + " wanted to date " + person2.name + ", but couldn't")
-    }
-}
-else{
-    console.log(person1.name + " didn't want to date " + person2.name)
-}
-
+console.log(myList)
