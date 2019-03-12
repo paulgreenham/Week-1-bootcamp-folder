@@ -153,3 +153,27 @@
 // }
 
 // console.log(reservations)
+
+
+//Extension
+
+const date = 3
+
+const kitchen = {
+    owner: "Geraldine",
+    hasOven: true/false, // choose one
+    fridge: {
+        price: 500,
+        works: true/false, // choose one
+        items: [
+            { name: "cheese", expiryDate: 7 },
+            { name: "raddish", expiryDate: 2 },
+            { name: "bread", expiryDate: 1 }
+        ]
+    }
+}
+
+let food = prompt("What item do you want to know about? (cheese, raddish, bread")
+lowerFood = food.toLowerCase()
+
+if(date > kitchen.fridge.items[food])
