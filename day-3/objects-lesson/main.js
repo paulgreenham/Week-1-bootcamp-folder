@@ -161,10 +161,10 @@ const date = 3
 
 const kitchen = {
     owner: "Geraldine",
-    hasOven: true/false, // choose one
+    hasOven: false,
     fridge: {
         price: 500,
-        works: true/false, // choose one
+        works: false,
         items: [
             { name: "cheese", expiryDate: 7 },
             { name: "raddish", expiryDate: 2 },
@@ -173,7 +173,27 @@ const kitchen = {
     }
 }
 
-let food = prompt("What item do you want to know about? (cheese, raddish, bread")
+let food = prompt("What item do you want to know about? (cheese, raddish, bread)")
 lowerFood = food.toLowerCase()
 
-if(date > kitchen.fridge.items[food])
+for (let item of kitchen.fridge.items){     //loop through array of objects in kitchen.fridge.items
+    if(lowerFood == item.name){             //locate object associated with food identified by user prompt
+        if(date > item.expiryDate){         //check if the selected food has expired
+            if(kitchen.fridge.works && kitchen.hasOven){        //combination 1
+                alert(kitchen.owner + "'s " + lowerFood + " expired " + (date - item.expiryDate) + " day(s) ago. Weird, considering her fridge works. Luckily, she has an oven to cook the " + lowerFood + " in.")
+            }
+            else if(kitchen.fridge.works && !kitchen.hasOven){  //combination 2
+                alert(kitchen.owner + "'s " + lowerFood + " expired " + (date - item.expiryDate) + " day(s) ago. Weird, considering her fridge works. Too bad she doesn't have an oven to cook the " + lowerFood + " in.")
+            }
+            else if(!kitchen.fridge.works && kitchen.hasOven){  //combination 3
+                alert(kitchen.owner + "'s " + lowerFood + " expired " + (date - item.expiryDate) + " day(s) ago. Probably because her fridge doesn't work. Luckily, she has an oven to cook the " + lowerFood + " in. And she'll have to pay " + (kitchen.fridge.price / 2) + " to fix the fridge.")
+            }
+            else{                                               //combination 4
+                alert(kitchen.owner + "'s " + lowerFood + " expired " + (date - item.expiryDate) + " day(s) ago. Probably because her fridge doesn't work. Too bad she doesn't have an oven to cook the " + lowerFood + " in. And she'll have to pay " + (kitchen.fridge.price / 2) + " to fix the fridge.")
+            }
+        }
+        else{                               //the selected food has not expirec
+            alert(kitchen.owner + "'s " + lowerFood + " has not expired. Isn't that awesome?!")
+        }
+    }
+}
